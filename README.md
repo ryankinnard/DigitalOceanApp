@@ -7,3 +7,5 @@ Prerequisites
 	3.	kubectl installed and configured to connect to your DigitalOcean cluster.
 	4.	doctl installed and authenticated with your DigitalOcean account.
 	5.	Docker installed for building and pushing container images.
+
+1. Clone the Repository
