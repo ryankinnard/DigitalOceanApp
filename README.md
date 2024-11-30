@@ -9,3 +9,16 @@ Prerequisites
 	5.	Docker installed for building and pushing container images.
 
 1. Clone the Repository
+
+2. Create Docker Image 
+   docker build -t todo-app .
+   docker run -p 3000:5000 todo-app
+
+3. Upload Docker Image
+   Create a DigitalOcean Container Registry if you have not done so already
+   	doctl registry create <your-registry-name>
+
+
+   
+   
+
