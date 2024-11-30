@@ -1,7 +1,7 @@
 # DigitalOceanApp
 
-Todo App Deployment Guide\
-This guide provides step-by-step instructions to deploy the Todo App.
+##Todo App Deployment Guide\
+###This guide provides step-by-step instructions to deploy the Todo App
 
 
 Prerequisites
@@ -17,7 +17,8 @@ Prerequisites
 2. Create Docker Image 
 docker build -t todo-app .
 
-3. Upload Docker Image
+
+4. Upload Docker Image
    Create a DigitalOcean Container Registry if you have not done so already
    	doctl registry create <your-registry-name>
 
