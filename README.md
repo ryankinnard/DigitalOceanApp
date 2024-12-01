@@ -28,7 +28,7 @@ Prerequisites
 
 6. Create running container<br/>
    ```docker run -p 3000:5000 registry.digitalocean.com/<your-registry-name>/todo-app```
-7. Create a Kubernetes Secret for the Database<br/>
+7. Create a Kubernetes secret for the database<br/>
    ```kubectl create secret generic db-credentials --from-literal=DATABASE_URI="mysql://<username>:<password>@<host>:<port>/<database>```
 8. Deploy Application<br/>
    ```kubectl apply -f deployment.yaml```
