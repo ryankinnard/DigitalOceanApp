@@ -34,17 +34,17 @@ def add():
 
 @app.route("/complete/<int:todo_id>")
 def complete(todo_id):
-    with db.session() as session:  # Use a session context
-        todo = session.get(Todo, todo_id)  # Use Session.get() instead of Query.get()
-        if todo:  # Check if the record exists
+    with db.session() as session: 
+        todo = session.get(Todo, todo_id)  
+        if todo: 
             todo.complete = not todo.complete
             session.commit()
     return redirect(url_for("index"))
 
 @app.route("/delete/<int:todo_id>")
 def delete(todo_id):
-    with db.session() as session:  # Use a session context
-        todo = session.get(Todo, todo_id)  # Use Session.get() instead of Query.get()
+    with db.session() as session:  
+        todo = session.get(Todo, todo_id)  
         db.session.delete(todo)
         db.session.commit()
     return redirect(url_for("index"))
