@@ -25,7 +25,6 @@ def index():
 
 @app.route("/add", methods=["POST"])
 def add():
-    # add new item
     title = request.form.get("title")
     new_todo = Todo(title=title, complete=False)
     db.session.add(new_todo)
