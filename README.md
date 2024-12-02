@@ -35,4 +35,4 @@ Prerequisites
 9. Expose Application<br/>
     ```kubectl apply -f service.yaml```
 10. Enable Horizontal Pod Autoscaling<br/>
-    ```kubectl apply -f hpa.yaml>```
+    ```kubectl apply -f hpa.yaml```
